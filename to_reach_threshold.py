@@ -2,8 +2,10 @@ def to_reach_threshold(data_array, target_threshold):
     # Input validation checks
     if not isinstance(data_array, list) or len(data_array) == 0:
         raise ValueError('data_array requires a list containing at least one number.')
+    
     if not all(isinstance(value, (int, float)) for value in data_array):
         raise ValueError('Each element in data_array must be a number.')
+    
     if not isinstance(target_threshold, (int, float)) or isinstance(target_threshold, bool):
         raise ValueError('target_threshold must be a number.')
 

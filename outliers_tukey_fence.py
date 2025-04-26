@@ -18,7 +18,7 @@ def outliers_tukey_fence(data_array, label, measure, multiplier=1.5):
     # Extract the array of values for the specified measure
     input_array = [data[measure] for data in data_array]
 
-    # Calculate Q1, Q3, and IQR for array
+    # Calculate Q1, Q3 and IQR for array
     q1 = np.percentile(input_array, 25)
     q3 = np.percentile(input_array, 75)
     iqr = q3 - q1

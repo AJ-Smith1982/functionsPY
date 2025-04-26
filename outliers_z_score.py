@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np 
 
 def outliers_z_score(data_array, label, measure, z_threshold=2, is_sample=False):
 
